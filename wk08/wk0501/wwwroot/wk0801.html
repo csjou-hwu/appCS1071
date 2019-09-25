@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <a-scene>
+        <a-cylinder position="0 0.8 -2" radius="0.5" height="1.5" src="hwu.png">
+            <a-animation attribute="rotation"
+                         dur="1000"
+                         fill="forwards"
+                         to="0 360 0"
+                         repeat="3"
+                         begin="2000"></a-animation>
+        </a-cylinder>
+        <a-cylinder position="-3 0.8 -2" radius="0.5" height="1.5" color="red">
+            <a-animation attribute="rotation"
+                         dur="1000"
+                         fill="forwards"
+                         to="360 0 0"
+                         repeat="3"
+                         begin="5000"></a-animation>
+        </a-cylinder>
+        <a-cylinder position="3 0.8 -2" radius="0.5" height="1.5" color="green">
+            <a-animation attribute="rotation"
+                         dur="1000"
+                         fill="forwards"
+                         to="360 0 0"
+                         repeat="3"
+                         begin="8000"></a-animation>
+        </a-cylinder>
+        <a-camera>
+            <a-cursor />
+        </a-camera>
+    </a-scene>
+</body>
+</html>

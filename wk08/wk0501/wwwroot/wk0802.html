@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="HWU4.jpg">
+            <a-animation attribute="rotation"
+                         dur="1000"
+                         fill="forwards"
+                         to="0 360 0"
+                         repeat="3"
+                         begin="2000"></a-animation>
+        </a-sky>
+        <a-sphere src="HWU4.jpg" side="double" radius="2" position ="0 1.8 -3"/>
+    </a-scene>
+</body>
+</html>

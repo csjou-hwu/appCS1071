@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="LF1.jpg">
+        </a-sky>
+        <a-link href="wk1103.html">
+            <a-curvedimage src="s2.png" height="3.0" position="-10 6 -10" radius="5.7" theta-length="72"
+                           rotation="0 100 0" scale="0.8 0.8 0.8">
+               <a-animation attribute="scale"
+               dur="2000"
+               fill="forwards"
+               to="2 2 2"
+               begin="mouseenter"></a-animation>
+               <a-animation attribute="scale"
+               dur="2000"
+               fill="forwards"
+               to="0.8 0.8 0.8"
+               begin="mouseleave"></a-animation>
+            </a-curvedimage>
+        </a-link>
+        <a-entity>
+            <a-camera>
+                <a-cursor />
+            </a-camera>
+        </a-entity>
+    </a-scene>
+</body>
+</html>

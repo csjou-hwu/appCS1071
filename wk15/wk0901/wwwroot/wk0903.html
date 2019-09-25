@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sphere position="-3 1.25 -5" radius="1.25" src="earth.jpg">
+            <a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="0 360 0"
+                         begin="click"></a-animation>
+        </a-sphere>
+        <a-sphere position="0 1.25 -5" radius="1.25" src="earth.jpg">
+            <a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="0 360 0"
+                         begin="click"></a-animation>
+        </a-sphere>
+        <a-sphere position="3 1.25 -5" radius="1.25" src="earth.jpg">
+            <a-animation attribute="rotation"
+                         dur="10000"
+                         fill="forwards"
+                         to="0 360 0"
+                         begin="click"></a-animation>
+        </a-sphere>
+        <a-entity>
+            <a-camera>
+                <a-cursor />
+            </a-camera>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
